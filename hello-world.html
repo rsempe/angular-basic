@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="angular.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <h1>Hello, {{ yourName }}!</h1>
+    </div>
+  </body>
+</html>
+
+<!--
+
+- Data binding
+  Bi-directional data binding means that if you change data on the back end, your changes will show up
+  in your view automagically
+  Similarly, if you change data in your view (e.g., by typing into a text box), it will
+  automagically update your model
+
+- ng-app: start angularjs process.
+- ng-model="yourName": databinding on yourName model.
+- {{ yourName }}: display the data yourName
+
+We’ve created a dynamic app that would ordinarily have taken much longer and many more lines of code to build: We did not have to specify any rules on bi-directional data binding, we didn’t have to write any updating code, we didn’t have to specify any models, and, in fact, we haven’t even touched JavaScript yet. We won’t have to do that until we want to build apps with more customized behavior.
+
+  -->
